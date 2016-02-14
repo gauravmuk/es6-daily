@@ -19,11 +19,11 @@ $(document).ready(function () {
 
         // ES5 Pattern gives error: Uncaught TypeError: this.setGamerTag is not a function
         $('#gamerTag').click(function () {
-            this.setGamerTag('gauravmuk');
+            // this.setGamerTag('gauravmuk');
         });
 
         // Arrow helps us solve it
-        $('#gamerTag').click(event => {
+        $('#gamerTag').click(() => {
             this.setGamerTag('gauravmuk');
         });
     }
